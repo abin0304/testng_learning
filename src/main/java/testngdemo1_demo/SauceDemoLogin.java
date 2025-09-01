@@ -59,7 +59,7 @@ public class SauceDemoLogin {
     @Test
     public void testInvalidLogin() {
         System.out.println("      Executing testInvalidLogin");
-
+Utils.waitFor(5000);
         driver.findElement(By.id("user-name")).sendKeys("wrong_user");
         driver.findElement(By.id("password")).sendKeys("wrong_pass");
         driver.findElement(By.id("login-button")).click();
